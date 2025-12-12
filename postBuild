@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Exit immediately if a command fails
+set -e
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Clear pip cache to avoid conflicts
+pip cache purge || true  # ignore errors if cache purge fails
+
+# Install dependencies cleanly
+python -m pip install --no-cache-dir -r requirements.txt
