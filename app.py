@@ -74,7 +74,7 @@ st.title("Banknote Identification 🏦")
 # Load model + embeddings
 try:
     encoder, gallery_embeddings, gallery_metadata = load_resources()
-    st.success(f"✅ Loaded model and {len(gallery_metadata)} reference banknotes")
+    st.success("Gallery embeddings loaded successfully")
 except Exception as e:
     st.error(f"❌ Failed to load resources: {e}")
     st.stop()
