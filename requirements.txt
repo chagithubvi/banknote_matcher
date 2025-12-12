@@ -1,5 +1,5 @@
 streamlit==1.30.0
-tensorflow==2.20.0
+tensorflow==2.15.0
 numpy==1.26.4
 pillow==10.1.0
 rich==14.2.0
