@@ -7,8 +7,9 @@ from tensorflow.keras.layers import DepthwiseConv2D
 import os
 
 # ==================== Paths ====================
-ENCODER_PATH = r"D:\New folder\banknote-net\models\banknote_net_encoder.h5"
-EMBEDDINGS_PATH = r"D:\New folder\banknote_embeddings.pkl"
+ENCODER_PATH = "banknote_net_encoder.h5"
+EMBEDDINGS_PATH = "banknote_embeddings.pkl"
+
 
 # ==================== Patch DepthwiseConv2D ====================
 class DepthwiseConv2DPatched(DepthwiseConv2D):
